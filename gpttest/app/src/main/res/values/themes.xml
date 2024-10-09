@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Gpttest" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Определение цвета для статусной строки (если требуется) -->
+        <item name="colorPrimaryDark">#000000</item>
+    </style>
+
+    <style name="Theme.Gpttest" parent="Base.Theme.Gpttest" />
+</resources>

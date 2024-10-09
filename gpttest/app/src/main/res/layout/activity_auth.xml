@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+
+    <Button
+        android:id="@+id/buttonAuth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/Button"
+        android:shadowColor="@color/ShadowGlow"
+        android:shadowRadius="90"
+        android:text="Регистрация / Авторизация"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonForgotPassword"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+    <Button
+        android:id="@+id/buttonForgotPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#162523"
+        android:shadowColor="#9FFFE8"
+        android:shadowRadius="90"
+        android:text="Забыли Пароль?"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonAuth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonAuth" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Введите свой Email"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/input_password"
+        app:layout_constraintEnd_toStartOf="@+id/text_email_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Back_rotation_Img" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:hint="Введите пароль"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAuth"
+        app:layout_constraintEnd_toStartOf="@+id/text_passwordError"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+    <TextView
+        android:id="@+id/Title_Auth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/ShadowGlow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="40"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="Аутентификация"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/Back_rotation_Img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Back_rotation_Img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Title_Auth"
+        app:srcCompat="@drawable/auth" />
+
+    <TextView
+        android:id="@+id/text_email_error"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/Error"
+        app:layout_constraintBottom_toBottomOf="@+id/input_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_email"
+        app:layout_constraintTop_toTopOf="@+id/input_email" />
+
+    <TextView
+        android:id="@+id/text_passwordError"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/Error"
+        app:layout_constraintBottom_toBottomOf="@+id/input_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_password"
+        app:layout_constraintTop_toTopOf="@+id/input_password"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/ShadowGlow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="40"
+        android:textSize="20sp"
+        android:text="Email"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/input_email"
+        app:layout_constraintStart_toStartOf="@+id/input_email" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/ShadowGlow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="40"
+        android:textSize="20sp"
+        android:text="Пароль"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/input_password"
+        app:layout_constraintStart_toStartOf="@+id/input_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name" translatable="false">HoroscopePlus</string>
+    <string name="title">Гороскоп Plus</string>
+    <string name="horoscopeText">Гороскоп</string>
+    <string name="inputBDay">Введите дату своего рождения:</string>
+    <string name="tarotText">Таро</string>
+    <string name="WIPText">В процессе разработки</string>
+    <string name="saveButtonText">Сохранить</string>
+    <string name="watchSaves">Сохранения</string>
+    <string name="deleteSaves">УДАЛИТЬ СОХРАНЕНИЯ</string>
+    <string name="changeLangTitle">ЯЗЫК</string>
+    <string name="shareText">Поделиться</string>
+    <string name="loadingText">Ждём ответа звёзд...</string>
+
+
+
+
+    <string name="toJob">на Работу</string>
+    <string name="toHealth">на Здоровье</string>
+    <string name="toToday">на Сегодня</string>
+    <string name="toLove">на Любовь</string>
+
+
+
+
+    <string name="aries">Овен</string>
+    <string name="taurus">Телец</string>
+    <string name="gemini">Близнецы</string>
+    <string name="cancer">Рак</string>
+    <string name="leo">Лев</string>
+    <string name="virgo">Дева</string>
+    <string name="libra">Весы</string>
+    <string name="scorpio">Скорпион</string>
+    <string name="sagittarius">Стрелец</string>
+    <string name="capricorn">Козерог</string>
+    <string name="aquarius">Водолей</string>
+    <string name="pisces">Рыбы</string>
+
+
+    <string name="language">ru</string>
+</resources>

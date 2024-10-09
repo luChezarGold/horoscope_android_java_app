@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ResultActivity">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/UserAuthTag"-->
+<!--        android:layout_width="376dp"-->
+<!--        android:layout_height="39dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleResultTextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/ShadowGlow"
+                android:shadowRadius="40"
+                android:text="Поделиться"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.yandex.mobile.ads.banner.BannerAdView
+                android:id="@+id/ad_container_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/resultTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/ShadowGlow"
+                android:shadowRadius="40"
+                android:text="Поделиться"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.yandex.mobile.ads.banner.BannerAdView
+                android:id="@+id/ad_container_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/resultTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/ShadowGlow"
+                android:shadowRadius="40"
+                android:text="Поделиться"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.yandex.mobile.ads.banner.BannerAdView
+                android:id="@+id/ad_container_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/resultTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/ShadowGlow"
+                android:shadowRadius="40"
+                android:text="Поделиться"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.yandex.mobile.ads.banner.BannerAdView
+                android:id="@+id/ad_container_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleResultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="66dp"
+        android:shadowColor="@color/ShadowGlow"
+        android:shadowRadius="40"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/Button"
+        android:text="@string/saveButtonText"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/shareButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/Button"
+        android:text="Поделиться"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/saveButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

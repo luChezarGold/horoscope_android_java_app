@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- В файле res/values/styles.xml -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Определение цвета для статусной строки (если требуется) -->
+        <item name="colorPrimaryDark">#000000</item>
+    </style>
+    <style name="DatePicker" >
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- Divider color -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+</resources>

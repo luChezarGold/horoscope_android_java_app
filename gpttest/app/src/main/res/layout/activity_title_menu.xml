@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".TitleMenu">
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/UserAuthTag"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/Title_TextView"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/buttonLogout"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonLogout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:backgroundTint="#000000"-->
+<!--        android:shadowColor="@color/ShadowGlow"-->
+<!--        android:shadowRadius="90"-->
+<!--        android:text="Выйти из аккаунта"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorHighlight="#FFFFFF"-->
+<!--        android:textColorLink="#FFFFFF"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/Title_TextView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/UserAuthTag"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <TextView
+        android:id="@+id/Title_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:shadowColor="@color/ShadowGlow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="40"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#595050"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Title_TextView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/llHoro"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/llTarot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Horo_Btn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:alpha="0"
+                        android:text="Button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Horo_TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:shadowColor="@color/ShadowGlow"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="40"
+                        android:text="@string/horoscopeText"
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Horo_Img_Btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/Horo_Img_Btn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/Horo_TextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/future" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTarot"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/lllove"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llHoro">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:text="@string/WIPText"
+                        android:gravity="center"
+                        android:alpha="1"
+                        android:textColor="@color/Error"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <Button
+                        android:id="@+id/tarotBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:alpha="0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Job_TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:shadowColor="@color/ShadowGlow"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="40"
+                        android:text="@string/tarotText"
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Tarot_Img_Btn"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/Tarot_Img_Btn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/Job_TextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/tarot" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lllove"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/llhealth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llTarot">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Love_Btn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:alpha="0"
+                        android:text="Button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Love_TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:shadowColor="@color/ShadowGlow"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="40"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Love_Img_Btn"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/Love_Img_Btn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/Love_TextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llhealth"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lllove">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Health_Btn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:alpha="0"
+                        android:text="Button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Health_TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:shadowColor="@color/ShadowGlow"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="40"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Health_Img_Btn"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/Health_Img_Btn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/Health_TextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/language_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@null"
+
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/watchSaveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/watchSaveButton"
+        app:layout_constraintTop_toTopOf="@id/watchSaveButton"
+        app:srcCompat="@drawable/rus" />
+
+    <Button
+        android:id="@+id/watchSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/Button"
+        android:text="@string/watchSaves"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/ad_container_view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.yandex.mobile.ads.banner.BannerAdView
+        android:id="@+id/ad_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

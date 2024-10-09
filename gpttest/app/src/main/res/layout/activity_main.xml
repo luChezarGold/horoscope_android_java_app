@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llSwitches"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TypeHoro">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llArrowLeft"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="64dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/llMiddleBtwArrows"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/ArrowLeftImgBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginEnd="64dp"
+                        android:layout_marginBottom="64dp"
+                        android:alpha="0.5"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/arrowleft"
+
+
+                        android:background="@null"
+                        android:scaleType="fitCenter"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llMiddleBtwArrows"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/llArrowRight"
+                app:layout_constraintStart_toEndOf="@id/llArrowLeft"
+                app:layout_constraintTop_toTopOf="parent">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llArrowRight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="64dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/llMiddleBtwArrows"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageButton
+                        android:id="@+id/ArrowRightImgBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="64dp"
+                        android:alpha="0.5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/arrowright"
+
+                        android:background="@null"
+                        android:scaleType="fitCenter"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Back_rotation_Img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.2"
+        app:layout_constraintTop_toTopOf="@id/zodiacImg"
+        app:layout_constraintEnd_toEndOf="@id/zodiacImg"
+        app:layout_constraintStart_toStartOf="@id/zodiacImg"
+        app:layout_constraintBottom_toBottomOf="@id/zodiacImg"
+        app:srcCompat="@drawable/auth" />
+
+
+
+
+    <ImageView
+        android:id="@+id/zodiacImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TypeHoro"
+        app:srcCompat="@drawable/aries" />
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/UserAuthTag"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="80dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <com.yandex.mobile.ads.banner.BannerAdView
+        android:id="@+id/ad_container_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/TypeHoro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Гороскоп на Работу"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="34sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/zodiacImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ad_container_view1" />
+
+    <View
+        android:id="@+id/SwipeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TypeHoro" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/chooseBDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/inputBDay"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/datePicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signName" />
+
+        <TextView
+            android:id="@+id/signName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="2dp"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/chooseBDay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#162523"
+            android:shadowColor="@color/ShadowGlow"
+            android:shadowRadius="90"
+            android:text="Узнать Гороскоп"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/datePicker"
+
+            app:layout_constraintStart_toStartOf="@+id/datePicker" />
+
+        <DatePicker
+            android:theme="@style/DatePicker"
+            android:id="@+id/datePicker"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:calendarTextColor="@color/white"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:foregroundTint="#FFFFFF"
+            android:headerBackground="@color/white"
+            android:spinnersShown="true"
+            android:yearListSelectorColor="@color/ShadowGlow"
+            app:layout_constraintBottom_toTopOf="@+id/sendButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/leftBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="80dp"
+        android:alpha="0"
+        android:contentDescription="йоу"
+        android:onClick="onLeftButtonClick"
+        app:layout_constraintBottom_toBottomOf="@id/llSwitches"
+        app:layout_constraintEnd_toStartOf="@id/rightBtn"
+        app:layout_constraintStart_toStartOf="@id/llSwitches"
+        app:layout_constraintTop_toTopOf="@id/llSwitches" />
+
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:alpha="0"
+        android:contentDescription="йоу"
+        android:onClick="onRightButtonClick"
+        app:layout_constraintBottom_toBottomOf="@id/llSwitches"
+        app:layout_constraintEnd_toEndOf="@id/llSwitches"
+        app:layout_constraintStart_toEndOf="@id/leftBtn"
+        app:layout_constraintTop_toTopOf="@id/llSwitches" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
